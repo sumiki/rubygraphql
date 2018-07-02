@@ -1,24 +1,14 @@
-# README
+# Links
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+http://graphql-ruby.org/
 
-* Ruby version
+https://facebook.github.io/relay/docs/en/installation-and-setup.html
 
-* System dependencies
+https://www.howtographql.com/basics/0-introduction/
 
-* Configuration
+https://qiita.com/kielze/items/b2168d7214992e5d37bf
 
-* Database creation
+http://localhost:3001/graphiql
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

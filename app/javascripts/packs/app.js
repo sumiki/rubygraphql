@@ -11,6 +11,7 @@ import {
     RecordSource,
     Store,
 } from 'relay-runtime';
+import TodoApp from '../components/todo_app'
 
 function fetchQuery(
     operation,
@@ -40,15 +41,13 @@ ReactDOM.render(
 environment={modernEnvironment}
 query={graphql`
       query appQuery {
-        viewer {
-          ...TodoApp_viewer
+          testfield
         }
-      }
     `}
 variables={{}}
 render={({error, props}) => {
     if (props) {
-        return <TodoApp viewer={props.viewer} />;
+        return <TodoApp { ...props } />;
     } else {
         return <div>Loading</div>;
     }

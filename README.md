@@ -1,4 +1,48 @@
-# Links
+# Rails + graphql + relay
+
+## Command
+
+Create graphal schema on server side.
+
+`bundle exec rake dump_schema`
+
+Create relay query on client side using server dump
+
+`yarn relay`
+
+Development watch
+
+`yarn watch`
+
+Production build
+
+`yarn build`
+
+
+## Test Query
+
+http://localhost:3001/graphiql
+
+```
+{
+  testfield
+}
+```
+
+
+```
+{
+  user(id: 1) {
+    name
+    email
+  }
+}
+```
+
+
+
+
+## Links
 
 
 http://graphql-ruby.org/
@@ -9,6 +53,11 @@ https://www.howtographql.com/basics/0-introduction/
 
 https://qiita.com/kielze/items/b2168d7214992e5d37bf
 
-http://localhost:3001/graphiql
+
+
+https://github.com/kielze/graphql-ruby-demo
+
+
+
 
 

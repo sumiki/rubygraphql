@@ -9,7 +9,8 @@ import {
 class TodoApp extends React.Component {
     render() {
         return <div>
-            Todo App
+            { this.props.testfield }
         </div>
     }
 }
+export default TodoApp

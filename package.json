@@ -23,6 +23,6 @@
   "scripts": {
     "build": "npx webpack -p --optimize-minimize --config app/javascripts/webpack.prod.js",
     "watch": "npx webpack --watch --config app/javascripts/webpack.dev.js",
-    "relay": "relay-compiler --src ./app/javascripts --schema ./graphql/schema.graphql --extensions js jsx"
+    "relay": "relay-compiler --src ./app/javascripts --schema ./app/graphql/schema.graphql --extensions js jsx"
   }
 }

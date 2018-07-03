@@ -11,7 +11,7 @@ import {
     RecordSource,
     Store,
 } from 'relay-runtime';
-import TodoApp from '../components/todo_app'
+import Users from "../components/users";
 
 function fetchQuery(
     operation,
@@ -41,13 +41,17 @@ ReactDOM.render(
 environment={modernEnvironment}
 query={graphql`
       query appQuery {
-          testfield
+          users {
+            id
+            name
+            email
+          }
         }
     `}
 variables={{}}
 render={({error, props}) => {
     if (props) {
-        return <TodoApp { ...props } />;
+        return <Users { ...props } />;
     } else {
         return <div>Loading</div>;
     }

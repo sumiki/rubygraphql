@@ -5,4 +5,8 @@ class Types::MutationType < Types::BaseObject
   def test_field
     "Hello World"
   end
+
+
+  field :update_user_mutation, mutation: Mutations::UpdateUserMutation
+  
 end

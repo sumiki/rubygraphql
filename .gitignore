@@ -33,5 +33,5 @@
 
 .DS_Store
 public/packs/*
-
+__generated__
 

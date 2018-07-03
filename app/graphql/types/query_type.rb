@@ -9,13 +9,21 @@ class Types::QueryType < Types::BaseObject
     "Hello World!"
   end
 
-  field :user, UserType, null: true do
+  field :user, Types::UserType, null: true do
     description "Find a post by ID"
     argument :id, ID, required: true
   end
 
   def user(id:)
     User.where(id: id).first
+  end
+  
+  field :users, [Types::UserType], null: false do
+    description "List all users"
+  end
+  
+  def users
+    User.all.to_a
   end
   
   field :node, field: GraphQL::Relay::Node.field

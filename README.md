@@ -29,6 +29,15 @@ http://localhost:3001/graphiql
 }
 ```
 
+```
+{
+  users {
+    name,
+    email
+  }
+}
+```
+
 
 ```
 {
